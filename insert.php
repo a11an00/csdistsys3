@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $address = $_POST['address'];
 
-    $sql = "INSERT INTO users
+    $sql = "INSERT INTO tblusers
             (fname, lname, contactno, email, address)
             VALUES
             ('$fname','$lname','$contactno','$email','$address')";
